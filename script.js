@@ -21,13 +21,15 @@ submit.addEventListener("click", (checkGuess) => {
   attempts++;
   if (userValue === randomNumber) {
     hint.textContent = "Congratulations! You guessed the correct number.";
-    hint.style.color = "red";
+    hint.style.color = "green";
     submit.disabled = true;
     createPlayAgainButton();
   } else if (userValue < randomNumber) {
     hint.textContent = "Too low! Try again.";
+    hint.style.color = "red";
   } else if (userValue > randomNumber) {
     hint.textContent = "Too high! Try again.";
+    hint.style.color = "red";
   }
   attemptText.textContent = "Attempts: " + attempts;
 });
