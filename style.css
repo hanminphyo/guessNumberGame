@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Press Start 2P", system-ui;
+}
+body {
+  background-color: #1496f3;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  text-align: center;
+  margin: 50px auto;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+input {
+  padding: 5px 10px;
+  text-align: center;
+  width: 150px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+}
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #ffc;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
