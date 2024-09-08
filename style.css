@@ -6,7 +6,7 @@
   font-family: "Press Start 2P", system-ui;
 }
 body {
-  background-color: #1496f3;
+  background: linear-gradient(to right, #595cff, #c6f8ff);
 }
 .container {
   display: flex;
@@ -18,7 +18,8 @@ body {
   text-align: center;
   margin: 50px auto;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(23, 22, 22, 0.3);
+  box-shadow: 17px 11px 5px 0px #9d9bba;
 }
 input {
   padding: 5px 10px;
