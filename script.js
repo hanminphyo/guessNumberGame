@@ -1,4 +1,4 @@
-let randomNumber = Math.floor(Math.random() * 100 + 1);
+let randomNumber = Math.floor(Math.random() * 50 + 1);
 let attempts = 0;
 let guessedNumbers = [];
 
@@ -41,8 +41,9 @@ submit.addEventListener("click", (checkGuess) => {
   }
   attemptText.textContent = "Attempts: " + attempts;
 });
+
 function resetGame() {
-  randomNumber = Math.floor(Math.random() * 100 + 1);
+  randomNumber = Math.floor(Math.random() * 50 + 1);
   attempts = 0;
   hint.textContent = "";
   attemptText.textContent = "Attempts: " + attempts;
@@ -64,5 +65,3 @@ function guessedNumberHistory() {
     listItem.style.padding = "10px";
   });
 }
-
-function clearGuessedNumber() {}
