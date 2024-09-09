@@ -50,6 +50,8 @@ function resetGame() {
   submit.disabled = false;
   playAgainContainer.innerHTML = "";
   hint.style.color = "";
+  guessedNumbersList.innerHTML = "";
+  guessedNumbers = [];
 }
 
 function guessedNumberHistory() {
@@ -62,3 +64,5 @@ function guessedNumberHistory() {
     listItem.style.padding = "10px";
   });
 }
+
+function clearGuessedNumber() {}
